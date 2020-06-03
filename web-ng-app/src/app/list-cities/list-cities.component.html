@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2>City List</h2>
+        </div>
+        <div class="panel-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>City Name</th>
+                <th>Description</th>
+                <th>Length</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+             <tr *ngFor="let city of cities | async">
+              <td>{{city.id}}</td>
+                <td>{{city.name}}</td>
+                <td>{{city.description}}</td>
+                <td>{{city.length}}</td>
+                <td><button (click)="deleteCity(city.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="cityDetails(city.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                </td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
