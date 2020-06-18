@@ -96,12 +96,5 @@ public class HotelController extends AbstractRestHandler {
         checkResourceFound(this.hotelService.getHotel(id));
         this.hotelService.deleteHotel(id);
     }
-    //home work
-    //dodać nowa tabele City z nazwa, wielkosc, opis
-    //utowrzyc encje
-    //utworzyc repository
-    //utworzyc service - wstrzyknięcie repository , operacje save ,update, create
-    //utworzyc controller z CRUD - metody 5 get (get all, byid, byname, bydescription , bylong, jeden post do tworzenia , put do modyfikacji, 2 delet( po id, po nazwienp.londyn)
-    //dodac lombok  na koniec
-
+  
 }
